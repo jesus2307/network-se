@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  vulnerable-ssh:
+    build:
+      context: .
+    ports:
+      - "2222:22" # Mapea el puerto 2222 del host al puerto 22 del contenedor
+    environment:
+      - ROOT_PASSWORD=123456 # Contraseña débil
+    restart: unless-stopped
