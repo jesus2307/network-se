@@ -1,6 +1,0 @@
-# Configuración insegura para demostración
-PermitRootLogin yes
-PasswordAuthentication yes
-ChallengeResponseAuthentication no
-UsePAM yes
-PermitEmptyPasswords no
