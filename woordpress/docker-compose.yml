@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  wordpress:
+    image: wordpress:4.9 # Una versión antigua conocida por tener vulnerabilidades.
+    container_name: wordpress_vulnerable
+    ports:
+      - "8080:80" # El servidor estará disponible en el puerto 8080.
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: rootpassword
+      WORDPRESS_DB_NAME: wordpress
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7 # Versión antigua de MySQL.
+    container_name: wordpress_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: wordpress
