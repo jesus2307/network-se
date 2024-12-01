@@ -3,8 +3,8 @@ services:
   vulnerable-ssh:
     build:
       context: .
+      dockerfile: Dockerfile
+      args:
+        ROOT_PASSWORD: 123456
     ports:
-      - "2222:22" # Mapea el puerto 2222 del host al puerto 22 del contenedor
-    environment:
-      - ROOT_PASSWORD=123456 # Contraseña débil
-    restart: unless-stopped
+      - "2222:22"
