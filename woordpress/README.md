@@ -10,3 +10,6 @@ Este contenedor contiene un WordPress vulnerable para prácticas de seguridad.
 ## Contexto
 - **Versión vulnerable:** WordPress 4.7.
 - **Dificultad:** Fácil.
+
+pista:--
+WordPress <= 5.2.3 - Stored XSS in Style Tags
