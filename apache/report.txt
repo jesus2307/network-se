@@ -1,0 +1,18 @@
+
+# Reporte: Apache Vulnerable CTF
+
+## Motivación
+Elegimos un servidor Apache porque es una tecnología común, y las configuraciones inseguras son un punto de ataque frecuente.
+
+## Método de ataque previsto
+1. Los atacantes deben escanear el puerto 8080.
+2. Acceder a la página web.
+3. Encontrar la flag en el código fuente de la página.
+
+## Integrantes del grupo
+- Miembro 1: Configuración del Dockerfile.
+- Miembro 2: Documentación (README y Reporte).
+
+## Contribución
+- Miembro 1: Creación del contenedor Docker.
+- Miembro 2: Redacción de la documentación.
