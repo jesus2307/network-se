@@ -1,21 +1,24 @@
-# Captura de Bandera - WordPress Vulnerable
-
-**Descripción:**  
+README: Captura de Bandera - WordPress Vulnerable
+Descripción:
 Esta tarea consiste en identificar y explotar una vulnerabilidad en una instalación de WordPress alojada en un contenedor Docker.
 
-**Dificultad:** Media
+Dificultad: Media
 
----
+Requisitos:
+Docker instalado en tu máquina.
+Herramientas de análisis de seguridad (puedes usar la que prefieras).
+Instrucciones:
+Levanta el entorno de trabajo:
+Descarga e inicia el contenedor desde la ubicación proporcionada:
 
-## Requisitos
-1. Tener Docker instalado en tu máquina.
-2. Herramientas de análisis de seguridad (elige la que prefieras).
+bash
+Copiar código
+docker run -d -p 8080:80 wordpress_vulnerable
+Esto hará que el sitio esté disponible en http://localhost:8080.
 
----
+Encuentra la vulnerabilidad:
+Analiza el sitio en busca de problemas de seguridad. Examina detenidamente los puntos de entrada disponibles en la aplicación.
 
-## Instrucciones
+Exploita la vulnerabilidad:
+Una vez identificada, utiliza tus conocimientos para encontrar la forma adecuada de capturar la bandera.
 
-1. **Levanta el entorno de trabajo:**  
-   Descarga e inicia el contenedor desde la ubicación proporcionada:  
-   ```bash
-   docker run -d -p 8080:80 wordpress_vulnerable
