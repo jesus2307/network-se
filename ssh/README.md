@@ -1,16 +1,24 @@
-Pasos para ejecutar el entorno:
-Construye y levanta el servicio:
+# Captura de Bandera - Fuerza Bruta SSH
 
-Desde la carpeta del proyecto, ejecuta:
+**Descripción:**  
+Tu tarea consiste en identificar y explotar una debilidad en el servicio SSH de un servidor configurado en un contenedor Docker.
 
-bash
-Copiar código
-docker-compose up --build
-Conéctate al servicio SSH:
+**Dificultad:**  
+Media
 
-Usa un cliente SSH desde el host:
+---
 
-bash
-Copiar código
-ssh root@localhost -p 2222
-Contraseña: 123456 (o la que configures en ROOT_PASSWORD).
+## Requisitos
+
+1. Tener Docker instalado en tu máquina.
+2. Contar con herramientas adecuadas para análisis y ataques de fuerza bruta.
+3. Un archivo de diccionario de contraseñas (o crear uno propio).
+
+---
+
+## Instrucciones
+
+1. **Levanta el entorno de trabajo:**  
+   Inicia el contenedor desde la ubicación proporcionada:  
+   ```bash
+   docker run -d -p 2222:22 ssh_vulnerable
