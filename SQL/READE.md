@@ -1,22 +1,24 @@
-# README: Captura de Bandera - WordPress Vulnerable
+# Captura de Bandera - SQL Injection
 
-## Descripción
-Esta tarea consiste en identificar y explotar una vulnerabilidad en una instalación de WordPress alojada en un contenedor Docker.
+**Descripción:**  
+Tu tarea consiste en identificar y explotar una vulnerabilidad de **SQL Injection** en una aplicación web alojada en un contenedor Docker.
 
-**Dificultad:** Media
+**Dificultad:**  
+Media
 
 ---
 
 ## Requisitos
-- Docker instalado en tu máquina.
-- Herramientas de análisis de seguridad (puedes usar la que prefieras).
+
+1. Tener Docker instalado en tu máquina.
+2. Contar con herramientas de análisis de seguridad web.
+3. Familiaridad con ataques de inyección SQL.
 
 ---
 
 ## Instrucciones
 
-### 1. Levanta el entorno de trabajo
-Descarga e inicia el contenedor desde la ubicación proporcionada:
-
-```bash
-docker run -d -p 8080:80 wordpress_vulnerable
+1. **Levanta el entorno de trabajo:**  
+   Inicia el contenedor desde la ubicación proporcionada:  
+   ```bash
+   docker run -d -p 8081:80 sql_vulnerable
