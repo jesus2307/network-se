@@ -1,34 +1,35 @@
-# Captura de Bandera - SQL Injection
+# Capture the Flag - SQL Injection
 
-**Descripción:**  
-Tu tarea consiste en identificar y explotar una vulnerabilidad de **SQL Injection** en una aplicación web alojada en un contenedor Docker.
+**Description:** 
 
-**Dificultad:**  
-Media
+Your task is to identify and exploit a **SQL Injection** vulnerability in a web application hosted in a Docker container.
 
----
-
-## Requisitos
-
-1. Tener Docker instalado en tu máquina.
-2. Contar con herramientas de análisis de seguridad web.
-3. Familiaridad con ataques de inyección SQL.
+**Difficulty:**  
+Medium
 
 ---
 
-## Instrucciones
+## Requirements
 
-1. **Levanta el entorno de trabajo:**  
-   Inicia el contenedor desde la ubicación proporcionada:  
+1. Have Docker installed on your machine.
+2. Have web security analysis tools.
+3. Familiarity with SQL injection attacks.
+
+---
+
+## Instructions
+
+1. **Raise the work environment:**  
+   Start the container from the provided location:
    ```bash
-   docker run -d -p 8081:80 sql_vulnerable
-Esto hará que la aplicación esté disponible en [http://localhost:8081](http://localhost:8081).
+docker run -d -p 8081:80 sql_vulnerable
+This will make the app available on [http://localhost:8081](http://localhost:8081).
 
-## Analiza la aplicación:
-La aplicación tiene una vulnerabilidad que puede ser descubierta analizando el tráfico y utilizando técnicas de prueba estándar.
+2. ## Analyze the application:
+The application has a vulnerability that can be discovered by analyzing traffic and using standard testing techniques.
 
-## Escaneo inicial:
-Genera tráfico en la aplicación y realiza un análisis con tus herramientas de seguridad favoritas.
+3. ## Initial scan:
+Generate traffic to the app and perform analysis with your favorite security tools.
 
-## Encuentra y explota la vulnerabilidad:
-Una vez identificada la vulnerabilidad, utiliza tus habilidades para explotarla y acceder a la información requerida.
+4. ## Find and exploit the vulnerability:
+Once the vulnerability is identified, use your skills to exploit it and access the required information.
