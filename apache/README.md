@@ -1,20 +1,20 @@
 
 # Apache Vulnerable CTF
 
-## Descripción del reto
-Un servidor Apache vulnerable con configuraciones inseguras. La flag está oculta en la página principal del servidor.
+## Description of the challenge
+A vulnerable Apache server with insecure configurations. The flag is hidden on the server's main page.
 
-## Instrucciones
-1. Construye la imagen Docker:
+## Instructions
+1. Build the Docker image:
     ```bash
     docker build -t apache_vuln_ctf .
     ```
-2. Ejecuta el contenedor:
+2. Run the container:
     ```bash
     docker run -d -p 8080:80 apache_vuln_ctf
     ```
-3. Escanea el puerto 8080 de la máquina anfitriona.
-4. Encuentra la flag accediendo al contenido del servidor.
+3. Scans port 8080 of the host machine.
+4. Find the flag by accessing the server's content.
 
-## Nivel de dificultad
-Fácil.
+## Difficulty level
+Easy.
