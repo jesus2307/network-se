@@ -1,12 +1,12 @@
-# Captura la Bandera: WordPress Vulnerable
+# Capture the flag: WordPress Vulnerable
 
-Este contenedor contiene un WordPress vulnerable para prácticas de seguridad.
+This container contains a vulnerable WordPress for security practices.
 
-## Instrucciones
-1. Inicia los servicios con `docker-compose up -d`.
-2. Accede a [http://localhost:8080](http://localhost:8080).
-3. Tu objetivo es encontrar WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS) y reproducirla.
-
-## Contexto
-- **Versión vulnerable:** WordPress 4.2.
-- **Dificultad:** Dificil.
+## Instructions
+1. Start services with `docker-compose up -d`.
+2. Access a [http://localhost:8080](http://localhost:8080).
+3. Your goal is to find WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS) and reproduce it.
+   
+## Context
+- **Vulnerable version:** WordPress 4.2.
+- **Difficulty:** Difficult.
