@@ -1,24 +1,23 @@
-# Captura de Bandera - Fuerza Bruta SSH
+# Capture the flag - Brute Force SSH
 
-**Descripción:**  
-Tu tarea consiste en identificar y explotar una debilidad en el servicio SSH de un servidor configurado en un contenedor Docker.
+**Description:**  
+Your task is to identify and exploit a weakness in the SSH service of a server configured in a Docker container.
 
-**Dificultad:**  
-Media
-
----
-
-## Requisitos
-
-1. Tener Docker instalado en tu máquina.
-2. Contar con herramientas adecuadas para análisis y ataques de fuerza bruta.
-3. Un archivo de diccionario de contraseñas (o crear uno propio).
+**Difficulty:**  
+Medium
 
 ---
 
-## Instrucciones
+## Requirements
 
-1. **Levanta el entorno de trabajo:**  
-   Inicia el contenedor desde la ubicación proporcionada:  
+1. Have Docker installed on your machine.
+2. Have adequate tools for analysis and brute force attacks.
+3. A password dictionary file (or create your own).
+---
+
+## Instrucctions
+
+1. **Raise the work environment:**  
+  Start the container from the provided location:
    ```bash
    docker run -d -p 2222:22 ssh_vulnerable
